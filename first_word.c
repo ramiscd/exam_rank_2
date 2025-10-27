@@ -29,6 +29,8 @@ $> */
 #include <stdio.h>
 #include <unistd.h>
 
+
+// done, i only need to adjust the infinite loop, and space validation.
 int main(int argc, char **argv)
 {
 	int i = 0;
@@ -42,8 +44,10 @@ int main(int argc, char **argv)
 			if (argv[1][i] != ' ' && argv[1][i] != '\t')
 			{
 				write(1, &argv[1][i],1);
+				i++;
+				if (argv[1][i] == ' ' && argv[1][i] == '\t')
+					break;
 			}
-			i++;
 		}
 	}
 	return (0);
