@@ -22,7 +22,7 @@ void print_bits(unsigned char octet)
 
 	while (i >= 0) 
 	{
-		// Empurra o número para a direita, verifica se deu 1; se deu 1 salva 1 e imprime, se der 0 salva 0 e imprime 0
+		// Empurra o número para a direita, verifica se deu 1; se deu 1 salva 1 e imprime, se der 0 salva 0 e imprime 0.
 		bit = (octet >> i & 1) + 48;
 		write (1, &bit, 1);
 		i--;
