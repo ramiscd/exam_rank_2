@@ -30,7 +30,7 @@ $> */
 #include <unistd.h>
 
 
-// done, i only need to adjust the infinite loop, and space validation.
+// done, i only need to adjust the infinite loop, and space validation
 int main(int argc, char **argv)
 {
 	int i = 0;
