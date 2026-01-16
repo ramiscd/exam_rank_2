@@ -46,7 +46,7 @@ int	*ft_range(int start, int end)
 		i++;
 	}
 
-	return (0);
+	return (range);
 }
 
 int main(void)
