@@ -1,13 +1,12 @@
-t_list *sort_list(t_list *lst, int (*cmp)(int, int))
-{
-	t_list *head;
-	int tmp;
+#include "list.h"
 
-	if (!lst)
-		return (NULL);
+t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
+{
+	int		tmp;
+	t_list	*head;
 
 	head = lst;
-	while (lst->next)
+	while (lst && lst->next)
 	{
 		if (cmp(lst->data, lst->next->data) == 0)
 		{
